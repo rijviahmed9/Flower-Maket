@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Flower Market</title>
+</head>
+<body class="font-sans text-gray-800 bg-[#f9fbff] overflow-x-hidden ">
+  <!-- Navbar -->
+
+<nav class="flex items-center justify-between px-6 py-4 shadow-sm bg-[#f9fbff]">
+  <!-- Logo -->
+  <div class="flex items-center text-[#e76f51] text-xl font-bold">
+    <img src="logo.png" alt="logo" class="w-[135px] h-[82px]" />
+  </div>
+
+  <!-- Right side: Menu + Cart -->
+  <div class="flex items-center space-x-6">
+    <!-- Menu links: Only show on md and up -->
+    <div class="hidden md:flex items-center space-x-6 text-[#6c6a7c] font-medium">
+      <a href="#" class="hover:text-black font-bold text-black">Home</a>
+      <a href="#" class="hover:text-black">Shop</a>
+      <a href="#" class="hover:text-black">About us</a>
+    </div>
+
+    <!-- Cart -->
+    <button class="flex items-center space-x-2 text-black font-bold px-4 py-2 rounded-md hover:bg-gray-100 transition">
+      <span class="text-lg font-bold">🛒</span>
+      <span>Cart ($56)</span>
+    </button>
+  </div>
+</nav>
+<!-- Banner -->
+  <section class="flex flex-col-reverse md:flex-row items-center p-6 md:p-16">
+    <div class="md:w-1/2 space-y-4">
+      <!-- <h1 class="text-4xl font-bold ">ALWAYS  Fresh Flowers </h1> -->
+
+      <h1 class="text-4xl font-bold leading-tight">
+  ALWAYS <span class=" text-4xl font-bold leading-tight font-bold  text-[#E95A08]">FRESH</span><br />
+     <span class=" text-4xl font-bold leading-tight  font-bold  text-[#E95A08]">FlOWERS</span>
+</h1>
+
+
+
+      <p class="text-gray-600">Indulge your senses with the beauty and fragrance of our fresh
+         flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that 
+         are perfect for any occasion. </p>
+      
+    </div>
+    <div class="md:w-1/2 mb-6 md:mb-0">
+      <img src="banner.png" alt="Banner" class="w-full rounded-lg" />
+    </div>
+  </section>
+
+  <!-- Plants Section -->
+  <section class="p-6 md:p-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold"><span class="text-[#E95A08]">Our</span> Plants</h2>
+      <p class="text-gray-600">Indulge your senses with the beauty and fragrance of
+         our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <template id="plant-card">
+
+
+
+
+        <div class="border p-4 rounded-lg flex flex-col items-center">
+          <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+          <h3 class="mt-2 font-semibold">Plant Name</h3>
+          <p class="text-green-600 font-bold">$20</p>
+          <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+        </div>
+      </template>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 1</h3>
+        <p class="text-green-600 font-bold">$20</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 2</h3>
+        <p class="text-green-600 font-bold">$22</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 3</h3>
+        <p class="text-green-600 font-bold">$25</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 4</h3>
+        <p class="text-green-600 font-bold">$18</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 5</h3>
+        <p class="text-green-600 font-bold">$28</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 6</h3>
+        <p class="text-green-600 font-bold">$32</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 7</h3>
+        <p class="text-green-600 font-bold">$35</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+      <div class="border p-4 rounded-lg flex flex-col items-center">
+        <img src="sample-flower-image.png" class="w-full h-auto max-h-60 object-contain rounded" alt="Plant" />
+        <h3 class="mt-2 font-semibold">Plant Name 8</h3>
+        <p class="text-green-600 font-bold">$40</p>
+        <button class="mt-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plants Lover Section -->
+ <section class="max-w-[1140px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-0">
+  <!-- Image Container -->
+  <div class="relative w-full md:w-[540px] h-auto md:h-[597px]">
+
+    <img src="flower-store.png"
+         alt="Plant Lover"
+         class="w-[540px] h-[597px] object-cover rounded-lg" />
+    <!-- Trusted Badge -->
+    <img src="trusted-badge.png"
+         alt="Trusted Badge"
+         class="hidden md:block absolute -top-[75px] -right-[75px] w-[200px] h-[200px]" /> 
+  </div>
+
+  <!-- Content -->
+<div class="w-full md:w-[540px] space-y-4">
+
+    <h2 class="text-[50px] font-bold">Flower &amp; Plants Lover</h2>
+    <ul class="list-disc list-inside space-y-3 text-gray-700">
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+        From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+        From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+      <li>
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+        From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Latest Deal Section -->
+
+    <section class="px-6 py-12 md:px-20 text-center">
+      <!-- Title -->
+      <h2 class="text-3xl font-bold mb-2">
+        <span class="text-orange-600 text-[#E95A08]  "> Latest  </span> <span> Deals </span>
+      </h2>
+      <p class="text-gray-600 max-w-xl mx-auto mb-10">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+        From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </p>
+
+      <!-- Deals Grid -->
+      <div class="grid md:grid-cols-3 gap-6 items-center">
+
+        <!-- Left Two Vertical Cards -->
+        <div class="flex flex-col gap-6">
+          <!-- Deal 1 -->
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <img src="./deal-bloom.png" alt="Bloom Plant" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
+              <h3 class="text-lg font-semibold">60% Off | Bloom Plant</h3>
+              <button class="mt-2 text-sm underline">Shop Now</button>
+            </div>
+          </div>
+          <!-- Deal 2 -->
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <img src="./deal-ana.png" alt="Ana Plant" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
+              <h3 class="text-lg font-semibold">30% Off | Ana Plant</h3>
+              <button class="mt-2 text-sm underline">Shop Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Right Card -->
+        <div class="md:col-span-2 relative rounded-lg overflow-hidden shadow-lg">
+          <img src="./deal-zabo.png" alt="Zabo Plant" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
+            <h3 class="text-2xl font-bold">25% Off | Zabo Plant</h3>
+            <button class="mt-3 text-base underline">Shop Now</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  <!-- Join Section -->
+   <!-- Newsletter Section -->
+  <section class="bg-cover bg-center py-24 px-4 text-white text-center" style="background-image: url('news-letter-bg.png');">
+    <h2 class="text-3xl md:text-5xl font-bold mb-6">Join the colorful Bunch</h2>
+    <form class="max-w-xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
+      <input type="email" placeholder="Write email" class="w-full md:flex-1 px-4 py-3 rounded-md text-black" />
+      <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+ <!-- Footer Section -->
+<footer class="bg-white text-gray-700 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Left -->
+    <div>
+      <div class="flex items-center space-x-2 mb-4">
+        <img src="logo.png" alt="Faugei Logo" class="w-15 h-15" />
+        
+      </div>
+      <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+    </div>
+
+    <!-- Middle -->
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-orange-500">Home</a></li>
+          <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+          <li><a href="#" class="hover:text-orange-500">Blog</a></li>
+          <li><a href="#" class="hover:text-orange-500">FAQ</a></li>
+          <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-orange-500">Features</a></li>
+          <li><a href="#" class="hover:text-orange-500">Pricing</a></li>
+          <li><a href="#" class="hover:text-orange-500">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-orange-500">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-orange-500">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right - Social -->
+    <div class="flex items-center justify-center md:justify-end space-x-4">
+      <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" class="w-8 h-8" /></a>
+      <a href="#"><img src="icon-twitter.png" alt="Twitter" class="w-6 h-6" /></a>
+      <a href="#"><img src="icon-facebook.png" alt="Facebook" class="w-6 h-6" /></a>
+      <a href="#"><img src="icon-youtube.png" alt="YouTube" class="w-6 h-6" /></a>
+    </div>
+    
+  </div>
+</footer>
+
+</body>
+</html>
